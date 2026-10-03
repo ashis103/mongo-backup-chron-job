@@ -1,5 +1,6 @@
 # Instructions to get backup
-# STEPS:
+# STEPS: take a instance EC2 which setup mongoDB and config for backup . login 
+login EC2# git clone (https://github.com/bongodev/mongo-backup-chron-job.git)
 ## Fork this repository in your GitHub
 
 ### Install and Create mongoDB with Dummy data:
@@ -40,7 +41,9 @@
 -   Attach the IAM role to your EC2 instance.
 
 
-### Check bucket access:
+### Check bucket access: 
+bucket need a IM user s3_backup and need attached policy S3 full access .
+
 
     aws s3 ls s3://your-bucket-name
 
